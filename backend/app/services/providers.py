@@ -67,6 +67,12 @@ class OllamaProvider(BaseProvider):
         }
         try:
             r = httpx.post(url, json=payload, timeout=s.OLLAMA_TIMEOUT_S)
+        except httpx.TimeoutException as e:
+            raise ProviderError(
+                "Ollama took longer than %ss to answer. The model may be busy. "
+                "Try again, or raise OLLAMA_TIMEOUT_S in .env. If it keeps failing, "
+                "restart Ollama (`ollama stop` / kill it, then `ollama serve`)." % s.OLLAMA_TIMEOUT_S
+            ) from e
         except Exception as e:  # noqa: BLE001 (connection refused etc.)
             raise ProviderError(
                 "Ollama is not reachable at %s. Start it with `ollama serve`, "
