@@ -1,0 +1,16 @@
+# How Lenny's Guests Talk About Product-Market Fit
+https://www.lennysnewsletter.com/sample-product-market-fit
+
+Lenny: Product-market fit is the question I get most. How do you know you have it?
+
+Guest: The honest answer is that you feel it in the data before you feel it in your gut. Retention is the core signal. If a cohort of users comes back on their own in week four and week eight without a discount or a nudge, something is working. Sean Ellis popularized the test of asking users how disappointed they would be if the product went away, and forty percent saying very disappointed is a useful threshold, but it is not magic. Use it alongside retention curves that flatten instead of decaying to zero.
+
+Lenny: What do teams get wrong before fit?
+
+Guest: They scale acquisition before the retention curve flattens. Paid marketing hides a leaky bucket. The better order is narrow the audience to one desperate segment, do unscalable onboarding work by hand, instrument a single activation moment, and only then pour fuel on growth. One team I advised cut their onboarding from nine steps to three, moved the aha moment into the first session, and weekly retention doubled before they spent another dollar on ads.
+
+Lenny: How should a founder approach pricing before fit?
+
+Guest: Charge early, even if it is scrappy. Willingness to pay is the strictest form of validation. Free users tell you the product is interesting. Paying users tell you it is valuable. Start with a simple paid tier, grandfather early customers, and treat every objection as a roadmap interview.
+
+Key tactics: define one retention metric, run the forty percent survey monthly, shrink onboarding to the aha moment, charge before you scale acquisition.

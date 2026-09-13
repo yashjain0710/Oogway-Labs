@@ -1,0 +1,16 @@
+# Growth Loops Instead of Funnels
+https://www.lennysnewsletter.com/sample-growth-loops
+
+Lenny: Everyone talks about funnels. You argue loops are the better mental model. Why?
+
+Guest: A funnel ends at conversion. A loop reinvests the output. In a content loop, users create content, search engines index it, new users arrive, and a fraction of them create more content. In a viral loop, an invitation sent from inside the product brings a new user who sends more invitations. The compounding step is what matters. Funnels leak by design. Loops accumulate.
+
+Lenny: How should a startup pick its loop?
+
+Guest: Map the natural action your retained users already take, then remove friction from the step that creates the next user. A marketplace example: a freelancer shares a project page to get hired, the client clicks through, signs up, and posts their own project. Measure the viral coefficient and the cycle time. A coefficient above one with a short cycle time is rare. Most teams win with a coefficient below one plus a strong retention base, which still compounds.
+
+Lenny: Common failure mode?
+
+Guest: Building three loops at once. Pick one loop, assign one owner, instrument input, steps, and output weekly. Common loops include user-generated content, sales-led referrals, and product-led invites. Kill the loop politely if cycle time stretches past thirty days with no compounding, and double down when output per cohort rises.
+
+Takeaway: one loop, one owner, weekly instrumentation of inputs and compounding outputs.

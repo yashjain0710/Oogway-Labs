@@ -1,0 +1,78 @@
+:root {
+  --bg: #0f1115; --panel: #171b22; --panel2: #1e242e; --line: #2a3140;
+  --text: #e8ecf3; --muted: #9aa4b5; --accent: #e8b34b; --accent2: #5cc8ff;
+  --user: #2b4a67; --radius: 12px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.55 -apple-system, "Segoe UI", Roboto, Inter, sans-serif; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.app { display: grid; grid-template-columns: 270px 1fr 430px; height: 100vh; }
+.side { background: var(--panel); border-right: 1px solid var(--line); padding: 14px; display: flex; flex-direction: column; gap: 12px; min-height: 0; }
+.brand { display: flex; gap: 10px; align-items: center; }
+.logo { width: 34px; height: 34px; border-radius: 10px; background: linear-gradient(135deg, var(--accent), #ff7a59); display: grid; place-items: center; font-weight: 800; color: #1a1206; }
+.brand small { display: block; color: var(--muted); font-size: 12px; }
+.new { background: var(--accent); border: 0; border-radius: 10px; padding: 10px; font-weight: 700; cursor: pointer; color: #221806; }
+.new:hover { filter: brightness(1.07); }
+.sess-list { overflow-y: auto; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.sess { display: flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.sess.on { border-color: var(--accent); }
+.sess-open { flex: 1; background: none; border: 0; color: var(--text); text-align: left; padding: 9px 10px; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sess-del { background: none; border: 0; color: var(--muted); cursor: pointer; padding: 0 10px; }
+.sess-del:hover { color: #ff8a8a; }
+.model-chip { font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 10px; }
+.muted { color: var(--muted); }
+.chat-col { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.banner { background: #3a2b12; color: #ffd98a; padding: 8px 14px; font-size: 13px; border-bottom: 1px solid var(--line); }
+.thread { flex: 1; overflow-y: auto; padding: 26px 22px; display: flex; flex-direction: column; gap: 14px; }
+.hero { max-width: 640px; margin: 6vh auto 0; text-align: center; }
+.hero h1 { font-size: 26px; margin: 0 0 8px; }
+.examples { display: grid; gap: 8px; margin-top: 18px; }
+.examples button { background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; cursor: pointer; text-align: left; }
+.examples button:hover { border-color: var(--accent); }
+.msg { display: flex; }
+.msg.user { justify-content: flex-end; }
+.bubble { max-width: 78%; background: var(--panel2); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; overflow-wrap: anywhere; }
+.msg.user .bubble { background: var(--user); border-color: #3a5f83; }
+.md h1, .md h2, .md h3 { margin: 0.7em 0 0.35em; }
+.md p { margin: 0.5em 0; }
+.md ul, .md ol { padding-left: 1.3em; }
+.md code { background: #0d1015; padding: 1px 5px; border-radius: 6px; font-size: 13px; }
+.md pre { background: #0d1015; padding: 10px; border-radius: 8px; overflow-x: auto; }
+.md pre code { background: none; padding: 0; }
+.sources { margin-top: 10px; display: grid; gap: 6px; }
+.src { border: 1px solid var(--line); border-radius: 8px; padding: 6px 9px; font-size: 13px; background: #161b23; }
+.src summary { cursor: pointer; }
+.typing { display: flex; gap: 6px; padding: 14px 16px; }
+.typing span { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); animation: b 1s infinite; }
+.typing span:nth-child(2) { animation-delay: 0.15s; } .typing span:nth-child(3) { animation-delay: 0.3s; }
+@keyframes b { 50% { opacity: 0.25; } }
+.composer { display: flex; gap: 8px; padding: 14px; border-top: 1px solid var(--line); background: var(--panel); }
+.composer input { flex: 1; background: #0d1015; color: var(--text); border: 1px solid var(--line); border-radius: 10px; padding: 12px; font-size: 15px; }
+.composer button { background: var(--accent); border: 0; border-radius: 10px; padding: 0 18px; font-weight: 700; cursor: pointer; color: #221806; }
+.composer button:disabled { opacity: 0.45; cursor: default; }
+.send-err { padding: 8px 14px; color: #ffb4b4; font-size: 13px; }
+.artifact { background: var(--panel); border-left: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; min-width: 0; }
+.artifact-head { padding: 12px 14px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+.artifact-head h3 { margin: 2px 0 0; font-size: 15px; }
+.artifact-kind { font-size: 11px; letter-spacing: 0.08em; color: var(--accent2); font-weight: 700; }
+.artifact-actions { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+.artifact-actions button { background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; cursor: pointer; font-size: 13px; }
+.tabs .on { border-color: var(--accent); color: var(--accent); }
+.artifact-body { flex: 1; overflow-y: auto; padding: 14px; }
+.artifact-body .md { background: #12161d; border: 1px solid var(--line); border-radius: 10px; padding: 4px 14px; }
+.html-frame { width: 100%; min-height: 70vh; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.code { background: #0d1015; border: 1px solid var(--line); border-radius: 10px; padding: 12px; white-space: pre-wrap; font-size: 12.5px; }
+.state { padding: 20px; color: var(--muted); }
+.state.error { color: #ffb4b4; }
+.artifact-empty { padding: 22px 8px; color: var(--muted); }
+.artifact-empty h3 { color: var(--text); margin-top: 0; }
+@media (max-width: 1100px) {
+  .app { grid-template-columns: 230px 1fr; }
+  .artifact { position: fixed; right: 0; top: 0; bottom: 0; width: min(92vw, 480px); z-index: 20; box-shadow: -12px 0 40px rgba(0,0,0,0.5); }
+  .artifact.empty { display: none; }
+}
+@media (max-width: 720px) {
+  .app { grid-template-columns: 1fr; }
+  .side { display: none; }
+  .bubble { max-width: 94%; }
+}

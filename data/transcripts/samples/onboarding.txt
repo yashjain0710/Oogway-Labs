@@ -1,0 +1,16 @@
+# Onboarding: Getting Users to the Aha Moment Fast
+https://www.lennysnewsletter.com/sample-onboarding
+
+Lenny: Onboarding teardowns are a reader favorite. What separates good onboarding from great?
+
+Guest: Speed to value. The best onboarding gets a new user to the aha moment in the first session, ideally in under five minutes. Everything before that moment is cost. Audit every field, tooltip, and empty state and ask whether it earns its place. Pre-fill with templates, defer profile questions until after value is delivered, and show a sample of the finished outcome so users know what good looks like.
+
+Lenny: What about activation metrics?
+
+Guest: Define activation as the moment a new user completes the core action that predicts retention. For a notes product that might be creating three notes and inviting one teammate. Track arrival to activation rate by channel, because intent differs wildly. Email invites convert differently than paid clicks. Then run one experiment per week against the biggest drop-off step. Small lifts compound: a five percent weekly improvement doubles activation in about fourteen weeks.
+
+Lenny: Any underrated tactic?
+
+Guest: Manual concierge onboarding for the first fifty accounts. You learn the objections firsthand, and those users become your testimonial base. Record the calls, tag the friction, and turn the top three fixes into product changes before you automate anything.
+
+Checklist: one activation event, templates over blank slates, defer non-essential steps, concierge first, one experiment per week.

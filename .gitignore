@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.env
+*.db
+*.log
+node_modules/
+dist/
+data/index/
+data/transcripts/*.txt
+!data/transcripts/README.md
+!data/transcripts/samples/*.txt
+.pytest_cache/
+.venv/
+venv/
